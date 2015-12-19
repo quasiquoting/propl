@@ -10,6 +10,10 @@
     `(defun ,(list_to_atom (++ "prop_" name)) ()
        ,@body)))
 
-(defun list-of (type)
+(defmacro list-of (type)
   "Sugar for `proper_types:list/1` since `list` is reserved in LFE."
   `(proper_types:list ,type))
+
+(defmacro any-list (type)
+  "Sugar for `(proper_types:list)` since `list` is reserved in LFE."
+  `(proper_types:list))
