@@ -12,8 +12,11 @@
 
 (defmacro list-of (type)
   "Sugar for `proper_types:list/1` since `list` is reserved in LFE."
-  `(proper_types:list ,type))
+  `(proper_types:list ',type))
 
 (defmacro any-list ()
   "Sugar for `(proper_types:list)` since `list` is reserved in LFE."
   `(proper_types:list))
+
+(defmacro prop-let (x raw-type gen)
+  `(proper_types:bind ,raw-type (lambda (',x) ,gen) 'false))
