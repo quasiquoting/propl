@@ -14,6 +14,6 @@
   "Sugar for `proper_types:list/1` since `list` is reserved in LFE."
   `(proper_types:list ,type))
 
-(defmacro any-list (type)
+(defmacro any-list ()
   "Sugar for `(proper_types:list)` since `list` is reserved in LFE."
   `(proper_types:list))
