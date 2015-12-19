@@ -1,0 +1,7 @@
+* propl
+An LFE wrapper for [[https://github.com/manopapad/proper][Proper]].
+
+** Build
+#+BEGIN_SRC sh
+rebar3 compile
+#+END_SRC
