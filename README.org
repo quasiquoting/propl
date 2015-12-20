@@ -1,5 +1,5 @@
 * propl
-An LFE wrapper for [[https://github.com/manopapad/proper][Proper]].
+An LFE wrapper for [[https://github.com/manopapad/proper][PropEr]].
 
 ** Build
 #+BEGIN_SRC sh
