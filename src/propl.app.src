@@ -2,7 +2,6 @@
  [{description, "An LFE wrapper for Proper."},
   {vsn, "0.1.0"},
   {registered, []},
-  {mod, {propl, []}},
   {applications, [kernel, stdlib]},
   {env,[]},
   {modules, []},
