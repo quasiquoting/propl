@@ -1,4 +1,4 @@
-* propl
+* PropL
 An LFE wrapper for [[https://github.com/manopapad/proper][PropEr]].
 
 ** Build
