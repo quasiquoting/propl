@@ -10,18 +10,14 @@
   (let ((name (to-unders (car arg)))
         (body (cdr arg)))
     `(defun ,(list_to_atom (++ "prop_" name)) ()
-       ,@body)
-    ;; (defmacro ,(prop- (car arg)) () (,name))
-    ))
+       ,@body)))
 
 (defmacro deftype arg
   "This macro is for defining PropEr types."
   (let ((name (to-unders (car arg)))
         (body (cdr arg)))
     `(defun ,(car arg) ()
-       ,@body)
-    ;; (defmacro ,(car arg) () (,name))
-    ))
+       ,@body)))
 
 (defmacro prop-let (x raw-type gen)
   "Sugar for `?LET`."
