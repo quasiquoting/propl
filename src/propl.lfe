@@ -19,10 +19,10 @@
 
 (defun any-tuple ()
   "Sugar for `proper_types:tuple/0` since `tuple` is reserved in LFE."
-  (proper_types:list))
+  (proper_types:tuple))
 
 (defun tuple-of (type)
-  "Sugar for `proper_types:tuple/1` since `tuple` is reserved in LFE."
+  "Sugar for `proper_types:loose_tuple/1` since `tuple` is reserved in LFE."
   (proper_types:loose_tuple type))
 
 
